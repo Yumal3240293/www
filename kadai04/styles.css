@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background-color: #f5f5f5;
+}
+
+header{
+    background-color: #a9a9a9;
+    color: #ffffff;
+    text-align: center;
+}
+
+.product-section{
+    background-color: #ffffff;
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+    border: 2px;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.buy-button{
+    background-color: #ff9900;
+}
+
+footer{
+    text-align: center;
+}
