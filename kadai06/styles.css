@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.d01{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Head{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+img{
+    width: ;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#s01{
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    margin: 10px;
+}
+
+#ph{
+    display: flex;
+}
+
+.n{
+    color: #ff6600;
+}
