@@ -1,0 +1,40 @@
+@charset "utf-8";
+*{
+    max-width: 800px;
+}
+
+#waku{
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    margin: 10px;
+    padding: 5px;
+}
+
+body{
+    background-color: #99ccff;
+}
+
+.header{
+    background-color: #00c;
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    height: auto;
+}
+
+#ph{
+    text-align: center;
+}
+
+#moji{
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
+}
