@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.index{
+    background-image: url("../img/renga_background.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
+
+.spots{
+    background-image: url("../img/renga_background.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
+
+.food{
+    background-image: url("../img/renga_background.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
+/*全体*/
+
+nav{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    width: 160px;
+    height: 60px;
+    float: left;
+}
+nav a{
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: darkred;
+    text-decoration: none;
+    background-image: url(../img/keepout.jpeg);
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+}
+
+nav a:hover{
+    color: crimson;
+    font-weight: bold;
+    background-image: none;
+}
+
+main{
+    overflow: hidden;
+}
+
+td{
+    text-align: center;
+}
+
+.Backtop{
+    text-align: right;
+}
+/*以下spotsのCSS*/
+.photo li{
+    list-style: none;
+}
+
+.photo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 5px;
+}
+
+.photo img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.Box{
+    border: solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Box p{
+    text-align: center;
+}
+
+.noBox p{
+    text-align: center;
+}
+
+
+.photo_size{
+    margin: 5px;
+}
+
+.money{
+    display: flex;
+    text-align: center;
+}
+
+.kojin{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.dantai{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/*以下foodのCSS*/
+.food p{
+    text-align: center;
+}
+
+
+/* 以下レスポンシブデザイン */
+@media screen and (max-width:960px) {
+    nav{
+        width: 100%;
+        height: auto;
+    }
+
+    nav li{
+        width: 33.3%;
+    }
+
+    nav a{
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: 100% 60px;
+    }
+
+    .index{
+        background-image: url(../img/renga_pad.jpg);
+        background-size: 100%;
+    }
+
+}
