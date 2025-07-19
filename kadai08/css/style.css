@@ -147,7 +147,7 @@ td{
         background-size: 100% 60px;
     }
 
-    .index,.food,.hotel.spots{
+    .index,.food,.hotel,.spots{
         background-image: url("../img/renga_phone.jpg");
         background-color: rgba(255,255,255,0.5);
         background-blend-mode: lighten;
