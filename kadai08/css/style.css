@@ -125,7 +125,7 @@ td{
 
 
 /* 以下レスポンシブデザイン */
-@media screen and (max-width:960px) {
+@media screen and (max-width:375px) {
     nav{
         width: 100%;
         height: auto;
@@ -142,7 +142,7 @@ td{
     }
 
     .index{
-        background-image: url(../img/renga_pad.jpg);
+        background-image: url(../img/renga_phone.jpg);
         background-size: 100%;
     }
 
