@@ -61,6 +61,13 @@ td{
 .Backtop{
     text-align: right;
 }
+
+/*以下ホームページのcss*/
+.index{
+    text-align: center;
+}
+
+
 /*以下spotsのCSS*/
 .photo li{
     list-style: none;
