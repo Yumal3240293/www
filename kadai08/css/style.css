@@ -17,6 +17,12 @@
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
 }
+
+.hotel{
+    background-image: url("../img/renga_background.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
 /*全体*/
 
 nav{
