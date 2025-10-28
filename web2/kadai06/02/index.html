@@ -8,13 +8,15 @@
 <body>
     <h3>座席の予約</h3>
     <p>東京会場<div id="message">（予約受付中）</div></p>
-    <button onclick="yoyaku()"></button>
+    <div id="message2"><button onclick="yoyaku()">予約する</button></div>
 
     <script>
         function yoyaku()
         {
             let yoyakutyu = document.getElementById('message');
+            let yoyakutyu2 = document.getElementById('message2');
             yoyakutyu.textContent = '(予約済み)';
+            yoyakutyu2.textContent = 'ありがとうございました。'
         }
     </script>
 </body>
