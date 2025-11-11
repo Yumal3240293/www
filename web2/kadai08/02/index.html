@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>入場料一覧</h1>
+    <table>
+        <thead id="t_head"></thead>
+        <tbody id="t_body"></tbody>
+    </table>
+
+    <script>
+        let list = ['大人','高校生','中学生','小学生'];
+        function createTable()
+        {
+            let row ='<tr><th></th>';
+            for(let i = 0; i <= list.length; i++){
+                row = row + '<th>' + list[i] + '</th>';
+            }
+            row = row + '</tr>';
+            document.getElementById('t_head').insertAdjacentHTML('beforeend',row);
+        }
+    </script>
+</body>
+</html>
