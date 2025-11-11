@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body onload="createTable()">
-    <h1>入場料一覧2</h1>
+    <h1>入場料一覧3</h1>
     <table>
         <thead id="t_head"></thead>
         <tbody id="t_body"></tbody>
@@ -18,7 +18,7 @@
         {
             let list = ['大人','高校生','中学生','小学生'];
             let row ='<tr><th></th>';
-            for(let i = 0; i <= list.length; i++){
+            for(let i = 0; i < list.length; i++){
                 row = row + '<th>' + list[i] + '</th>';
             }
             row = row + '</tr>';
