@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document08</title>
 </head>
 <body>
-    <h1></h1>
-    <p></p>
+    <h1>Click Counter★for構文</h1>
+    <p>ボタンをクリックすると、クリック回数に応じて結果が変わります。<br>JavaScriptのfor構文を使って処理を作ってみましょう</p>
 
-    <p></p>
+    <p>クリック回数<div id="count"></div>回</p>
     <button onclick="show()">クリック</button>
     <p>結果</p>
     <div id="message"></div>
@@ -17,11 +17,28 @@
     <script>
         let clickTime = 0;
         function show(){
-            for(clickTime = 0; clickTime < 6; clickTime++){
-                
+            for(clickTime = 1; clickTime <= 6; clickTime++){
+                if(clickTime == 1){
+                    document.getElementById('message').textContent = '★';
+                }else if(clickTime == 2){
+                    document.getElementById('message').textContent = '★★★★★';
+                }else if(clickTime == 3){
+                    document.getElementById('message').textContent = '1,2,3,4,5';
+                }else if(clickTime == 4){
+                    document.getElementById('message').textContent = '2,4,6,8,10';
+                }else if(clickTime == 5){
+                    let sum = 0;
+                    for(let i = 0; i <= clickTimes; i++){
+                        sum = sum + i;
+                    }
+                    document.getElementById('message').textContent = sum;
+                }else if(clickTime == 6){
+                    document.getElementById('message').textContent = 'クリアしました。カウントを0に戻します。';
+                    clickTimes = 0;
+                }
             }
-
         }
+
     </script>
 
 </body>
