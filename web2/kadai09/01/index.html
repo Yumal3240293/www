@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document09</title>
+    <title>Document10</title>
 </head>
 <body>
     <h1>Click Counter★for構文</h1>
@@ -17,23 +17,23 @@
     <script>
         let clickTimes = 0;
         function show(){
-            checkTimes++;
+            clickTimes++;
             for(i = 0; i <= 6; i++){
                 if(i == 1 && checkTimes == i){
                     document.getElementById('message').textContent = '★';
-                }else if(i == 2 && checkTimes == i){
+                }else if(i == 2 && clickTimes == i){
                     document.getElementById('message').textContent = '★★★★★';
-                }else if(i == 3 && checkTimes == i){
+                }else if(i == 3 && clickTimes == i){
                     document.getElementById('message').textContent = '1,2,3,4,5';
-                }else if(i == 4 && checkTimes == i){
+                }else if(i == 4 && clickTimes == i){
                     document.getElementById('message').textContent = '2,4,6,8,10';
-                }else if(i == 5 && checkTimes == i){
+                }else if(i == 5 && clickTimes == i){
                     let sum = 0;
                     for(let n = 0; n <= clickTimes; n++){
                         sum = sum + n;
                     }
                     document.getElementById('message').textContent = sum;
-                }else if(i == 6 && checkTimes == i){
+                }else if(i == 6 && clickTimes == i){
                     document.getElementById('message').textContent = 'クリアしました。カウントを0に戻します。';
                     clickTimes = 0;
                 }
