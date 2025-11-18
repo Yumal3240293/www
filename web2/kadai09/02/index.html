@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+
+    <p></p>
+    <button onclick="show()">クリック</button>
+    <p>結果</p>
+    <div id="message"></div>
+
+    <script>
+        let clickTimes = 0;
+        function show(){
+            clickTime++;
+            switch(clickTimes){
+                case 1:
+                    document.getElementById('message').textContent = '★';
+                    break;
+                case 2:
+                    document.getElementById('message').textContent = '★★★★★';
+                    break;
+                case 3:
+                    document.getElementById('message').textContent = '1,2,3,4,5';
+                    break;
+                case 4:
+                    document.getElementById('message').textContent = '2,4,6,8,10';
+                    break;
+                case 5:
+                    let sum = 0;
+                    for(let i = 0; i <= clickTimes; i++){
+                        sum = sum + i;
+                    }
+                    document.getElementById('message').textContent = sum;
+                    break;
+                case 6:
+                    document.getElementById('message').textContent = 'クリアしました。カウントを0に戻します。';
+                    clickTimes = 0;
+                    break;
+            }
+
+        }
+    </script>
+
+</body>
+</html>
