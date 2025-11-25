@@ -8,16 +8,16 @@
 <body>
     <h1>写真の一覧</h1>
     <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
-    <div id="pic"><button onclick="showpic()">写真を表示</button></div>
-    
+    <div id="bt"><button onclick="showpic()">写真を表示</button></div>
+    <div id="pic"></div>
     <script>
         function showpic()
         {
-            let list = ['photo_1.jpg','photo_2.jpg',img src = "photo_3.jpg",
-                        img src = "photo_4.jpg",img src = "photo_5.jpg",img src = "photo_6.jpg",
-                        img src = "photo_7.jpg",img src = "photo_8.jpg"
-                        ]
+            let list = ['photo_1.jpg','photo_2.jpg','photo_3.jpg',
+                        'photo_4.jpg','photo_5.jpg','photo_6.jpg'
+                        'photo_7.jpg','photo_8.jpg']
             let picBox = document.getElementById('pic');
+            let non = document.getElementById('bt');
             for(let i = 1; i <= 8; i++){
                 picBox.insertAdjacentHTML('beforeend',list[i]);
             }
