@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>要素の追加と削除2</title>
+    <title>要素の追加と削除3</title>
 </head>
 <body>
     <h1>写真の一覧</h1>
@@ -13,16 +13,16 @@
     <script>
         function showpic()
         {
-            let list = ['photo_1.jpg','photo_2.jpg','photo_3.jpg',
+            let lists = ['photo_1.jpg','photo_2.jpg','photo_3.jpg',
                         'photo_4.jpg','photo_5.jpg','photo_6.jpg'
                         'photo_7.jpg','photo_8.jpg']
             let picBox = document.getElementById('pic');
             let non = document.getElementById('bt');
             non = '';
-            for(let i = 0; i <= 7; i++){
-                picBox.insertAdjacentHTML('beforeend',list[i]);
-            }
-            
+            let images = lists
+                    .map(path => `<img src="${path}" alt="写真">`)
+                    .join('');
+            imageContainer.insertAdjacentHTML('beforeend', images);
         }
     </script>
 </body>
