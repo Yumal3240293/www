@@ -35,6 +35,14 @@
         document.getElementById('message').textContent
         = anser[0] + '、' + anser[1] + '、' + anser[2] + 'が解です。'
     }
+
+    function check(x){
+        if((x * x * x) - (53 * (x * x)) + (620 * x) - 1036 == 0){
+            return(true);
+        }else{
+            return(false);
+        }
+    }
 </script>
 
 </body>
