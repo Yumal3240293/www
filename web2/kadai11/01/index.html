@@ -25,11 +25,14 @@
     function show(){
         let anser = [];
         let count = 0;
-        for(let i = 1; count < 3; i++){
+        for(let i = 1; i <= 10000; i++){
             let flag = check(i);
             if(flag){
                 anser[count] = i;
                 count += 1;
+                if(count == 3){
+                    break;
+                }
             }
         }
         document.getElementById('message').textContent
