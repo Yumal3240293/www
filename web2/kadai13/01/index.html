@@ -8,11 +8,31 @@
 <body>
     <h1>n~mで割り切れる数字</h1>
     <p>1～10の好きな範囲で<br>割り切れる最小の数値をJavaScriptで求めます。</p>
-    <button onclick="window.prompt()">範囲を指定</button>
+    <button onclick="nyuryoku()">範囲を指定</button>
     <div id="message" class="anser">ここに結果が表示されます。</div>
 
     <script>
+        function nyuryoku(){
+            let min;
+            let max;
+            min = window.prompt("範囲の最小値を1～10で入力してください")
+            
+            if(1 <= min && min <=10 ){
+                
+                max = window.prompt("範囲の最小値を1～10で入力してください")
+                if(min <= max && max <= 10){
 
+                }else{
+                alert( min + '~10の値を入力してください')
+                
+            }
+            }else{
+                alert('1~10の値を入力してください')
+                
+            }
+            
+
+        }
     </script>
 </body>
 </html>
